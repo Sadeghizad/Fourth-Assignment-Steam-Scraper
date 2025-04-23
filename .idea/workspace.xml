@@ -4,8 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7684d9fd-9749-4ce8-9ca1-4a1896f87cbc" name="Changes" comment="do the job so there is no bad score">
+    <list default="true" id="7684d9fd-9749-4ce8-9ca1-4a1896f87cbc" name="Changes" comment="do a cleaning">
+      <change afterPath="$PROJECT_DIR$/src/main/java/OscarFilm.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/oscar.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.4/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.4/executionHistory/executionHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.4/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.4/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.4/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.4/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.4/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.4/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.4/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.4/fileHashes/resourceHashesCache.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/Parser.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/Parser.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Parser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Parser.java" afterDir="false" />
     </list>
@@ -88,6 +99,7 @@
       <recent name="E:\homework\semester 4\TA\HTML-Parser\src\main\java" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="F:\Documents\java\AP course\Fourth-Assignment-Steam-Scraper\src\main\resources" />
       <recent name="C:\Users\Lenovo\OneDrive\Desktop\AP\html pparser\New folder\Fourth-Assignment-HTML-Parser\src\Resources" />
     </key>
   </component>
@@ -144,7 +156,7 @@
       <workItem from="1709147208766" duration="626000" />
       <workItem from="1709754207930" duration="532000" />
       <workItem from="1743338234636" duration="2449000" />
-      <workItem from="1745392528387" duration="4717000" />
+      <workItem from="1745392528387" duration="11546000" />
     </task>
     <task id="LOCAL-00001" summary="added the the Game class and its html, some example for test added">
       <created>1743341137706</created>
@@ -161,7 +173,15 @@
       <option name="project" value="LOCAL" />
       <updated>1745396900484</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="do a cleaning">
+      <option name="closed" value="true" />
+      <created>1745397305010</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1745397305010</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -181,6 +201,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="added the the Game class and its html, some example for test added" />
     <MESSAGE value="do the job so there is no bad score" />
-    <option name="LAST_COMMIT_MESSAGE" value="do the job so there is no bad score" />
+    <MESSAGE value="do a cleaning" />
+    <option name="LAST_COMMIT_MESSAGE" value="do a cleaning" />
   </component>
 </project>
