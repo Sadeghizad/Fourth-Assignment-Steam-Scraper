@@ -17,9 +17,7 @@ public class Parser {
     /** All games loaded once {@link #setUp()} is called. */
     private static final List<Game> games = new ArrayList<>();
 
-    /* -------------------------------------------------------------------------------------------------- */
-    /*                                       SORTING HELPERS                                              */
-    /* -------------------------------------------------------------------------------------------------- */
+    // sort helper
 
     /** Alphabetical A → Z (natural order) */
     public List<Game> sortByName() {
@@ -42,18 +40,15 @@ public class Parser {
         return sorted;
     }
 
-    /* -------------------------------------------------------------------------------------------------- */
-    /*                                           PARSING                                                  */
-    /* -------------------------------------------------------------------------------------------------- */
+    // parsing
 
     /**
      * Parse the HTML exactly once and populate {@link #games}.
-     *
      * @throws IOException if the resource cannot be read
      */
     public void setUp() throws IOException {
 
-        if (!games.isEmpty()) return;                          // already parsed
+        if (!games.isEmpty()) return;
 
         // 1. Load the file from the class-path (src/Resources or resources/)
         try (InputStream in = Parser.class
@@ -80,17 +75,14 @@ public class Parser {
                 // price like "91 €" → 91
                 int price = parseIntSafely(optText(card, "span.game-price"));
 
-                if (!name.isEmpty()) {                         // skip empty rows
+                if (!name.isEmpty()) {
                     games.add(new Game(name, rating, price));
                 }
             }
         }
     }
 
-    /* -------------------------------------------------------------------------------------------------- */
-    /*                                            HELPERS                                                 */
-    /* -------------------------------------------------------------------------------------------------- */
-
+    // helper
     /** Safe text extraction: empty string if selector missing */
     private static String optText(Element root, String cssQuery) {
         Element el = root.selectFirst(cssQuery);
@@ -108,24 +100,5 @@ public class Parser {
     private static int parseIntSafely(String raw) {
         String cleaned = raw.replaceAll("[^0-9]", "");
         return cleaned.isEmpty() ? 0 : Integer.parseInt(cleaned);
-    }
-
-    /* -------------------------------------------------------------------------------------------------- */
-    /*                                             DEMO                                                   */
-    /* -------------------------------------------------------------------------------------------------- */
-
-    public static void main(String[] args) throws IOException {
-
-        Parser p = new Parser();
-        p.setUp();
-
-        System.out.println("— A-Z ———————————————————————————————————————");
-        p.sortByName().forEach(System.out::println);
-
-        System.out.println("\n— Highest rating ————————————————");
-        p.sortByRating().forEach(System.out::println);
-
-        System.out.println("\n— Most expensive ————————————————");
-        p.sortByPrice().forEach(System.out::println);
     }
 }
